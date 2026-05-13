@@ -1,5 +1,6 @@
 import type { MetaFunction } from "react-router";
 import { Link } from "react-router";
+import { Globe, Cog, Lightbulb, Star } from "~/components/Icons";
 
 export const meta: MetaFunction = () => [
     { title: "Le SITA — Vision, Mission & Histoire | SITA" },
@@ -12,30 +13,46 @@ export const meta: MetaFunction = () => [
 
 const valeurs = [
     {
-        icon: "🌍",
+        icon: "globe",
         titre: "Panafricanisme",
         description:
             "Réunir les acteurs du textile de tous les horizons africains pour créer des synergies continentales durables.",
     },
     {
-        icon: "⚙️",
+        icon: "cog",
         titre: "Industrialisation",
         description:
             "Promouvoir la transformation locale des matières premières pour créer de la valeur ajoutée sur le continent.",
     },
     {
-        icon: "💡",
+        icon: "lightbulb",
         titre: "Innovation",
         description:
             "Encourager la digitalisation, les nouvelles techniques de teinture et l'intégration du e-commerce dans le secteur.",
     },
     {
-        icon: "🎓",
+        icon: "star",
         titre: "Formation",
         description:
             "Développer les compétences des artisans, stylistes et industriels à travers l'Académie SITA.",
     },
 ];
+
+function renderIcon(iconName: string) {
+    const iconSize = "w-12 h-12";
+    switch (iconName) {
+        case "globe":
+            return <Globe className={iconSize} />;
+        case "cog":
+            return <Cog className={iconSize} />;
+        case "lightbulb":
+            return <Lightbulb className={iconSize} />;
+        case "star":
+            return <Star className={iconSize} />;
+        default:
+            return null;
+    }
+}
 
 const historique = [
     {
@@ -227,7 +244,7 @@ export default function LeSitaPage() {
                                 className="card bg-base-100 shadow-sm border border-base-300 card-cultural"
                             >
                                 <div className="card-body items-center text-center p-6">
-                                    <div className="text-4xl mb-3">{v.icon}</div>
+                                    <div className="text-4xl mb-3">{renderIcon(v.icon)}</div>
                                     <h3
                                         className="card-title text-lg"
                                         style={{ fontFamily: "var(--font-heading)" }}

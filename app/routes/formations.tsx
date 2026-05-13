@@ -1,4 +1,5 @@
 import type { MetaFunction } from "react-router";
+import { ShoppingCart, Needle, Leaf, Scissors, BarChart, Smartphone } from "~/components/Icons";
 
 export const meta: MetaFunction = () => [
     { title: "Formations & Académie SITA | SITA" },
@@ -11,7 +12,7 @@ export const meta: MetaFunction = () => [
 
 const modules = [
     {
-        icon: "🛒",
+        icon: "shopping-cart",
         titre: "E-commerce & Vente en ligne",
         duree: "6 semaines",
         niveau: "Débutant à Intermédiaire",
@@ -27,7 +28,7 @@ const modules = [
         color: "border-primary",
     },
     {
-        icon: "🧵",
+        icon: "needle",
         titre: "Techniques de Tissage Traditionnel",
         duree: "8 semaines",
         niveau: "Tous niveaux",
@@ -43,7 +44,7 @@ const modules = [
         color: "border-secondary",
     },
     {
-        icon: "🌿",
+        icon: "leaf",
         titre: "Teinture Naturelle & Bio",
         duree: "4 semaines",
         niveau: "Intermédiaire",
@@ -59,7 +60,7 @@ const modules = [
         color: "border-accent",
     },
     {
-        icon: "✂️",
+        icon: "scissors",
         titre: "Stylisme & Création de Mode",
         duree: "12 semaines",
         niveau: "Intermédiaire à Avancé",
@@ -75,7 +76,7 @@ const modules = [
         color: "border-neutral",
     },
     {
-        icon: "📊",
+        icon: "bar-chart",
         titre: "Gestion d'Entreprise Textile",
         duree: "5 semaines",
         niveau: "Tous niveaux",
@@ -91,7 +92,7 @@ const modules = [
         color: "border-primary",
     },
     {
-        icon: "📱",
+        icon: "smartphone",
         titre: "Communication Digitale pour Créateurs",
         duree: "3 semaines",
         niveau: "Débutant",
@@ -107,6 +108,31 @@ const modules = [
         color: "border-secondary",
     },
 ];
+
+function renderModuleIcon(iconName: string) {
+    const primaryColor = "text-primary";
+    const secondaryColor = "text-secondary";
+    const accentColor = "text-accent";
+    const neutralColor = "text-neutral";
+    const iconSize = "w-8 h-8";
+
+    switch (iconName) {
+        case "shopping-cart":
+            return <ShoppingCart className={`${iconSize} ${primaryColor}`} />;
+        case "needle":
+            return <Needle className={`${iconSize} ${secondaryColor}`} />;
+        case "leaf":
+            return <Leaf className={`${iconSize} ${accentColor}`} />;
+        case "scissors":
+            return <Scissors className={`${iconSize} ${neutralColor}`} />;
+        case "bar-chart":
+            return <BarChart className={`${iconSize} ${primaryColor}`} />;
+        case "smartphone":
+            return <Smartphone className={`${iconSize} ${secondaryColor}`} />;
+        default:
+            return null;
+    }
+}
 
 const temoignages = [
     {
@@ -174,7 +200,7 @@ export default function FormationsPage() {
                         {modules.map((mod) => (
                             <div key={mod.titre} className={`card bg-base-100 shadow-sm border-t-4 ${mod.color} border border-base-200 card-cultural`}>
                                 <div className="card-body p-6">
-                                    <div className="text-4xl mb-3">{mod.icon}</div>
+                                    <div className="text-4xl mb-3">{renderModuleIcon(mod.icon)}</div>
                                     <div className="flex items-center gap-2 mb-2">
                                         <span className={`badge ${mod.badge} badge-sm`}>{mod.niveau}</span>
                                         <span className="text-xs text-base-content/50">⏱ {mod.duree}</span>

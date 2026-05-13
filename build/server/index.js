@@ -61,10 +61,11 @@ const entryServer = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineP
   default: handleRequest,
   streamTimeout
 }, Symbol.toStringTag, { value: "Module" }));
-const stylesheet = "/assets/app-BTmZbHkc.css";
+const stylesheet = "/assets/app-CruH3Uz0.css";
 const links = () => [{
-  rel: "preconnect",
-  href: "https://fonts.googleapis.com"
+  rel: "icon",
+  href: "/favicon.svg",
+  type: "image/svg+xml"
 }, {
   rel: "preconnect",
   href: "https://fonts.gstatic.com",
@@ -345,7 +346,7 @@ const actualites = [{
   category: "Annonce",
   title: "La 5ème édition du SITA bientôt annoncée",
   excerpt: "Le Commissaire Général du SITA dévoilera prochainement la ville hôte de la 5ème édition ainsi que les thématiques retenues pour cette nouvelle rencontre continentale.",
-  image: "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?w=600&q=80",
+  image: "https://images.unsplash.com/photo-1589156188157-6a8a688e1388?w=600&q=80",
   tag: "Prochaine édition",
   tagColor: "badge-primary"
 }, {
@@ -354,7 +355,7 @@ const actualites = [{
   category: "Textile",
   title: "Le coton africain s'impose sur la scène internationale",
   excerpt: "Les producteurs de coton d'Afrique de l'Ouest enregistrent une hausse significative de la demande internationale, boostée par la montée en puissance de la mode éthique.",
-  image: "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80",
+  image: "https://images.unsplash.com/photo-1566150905458-1bf049841f92?w=600&q=80",
   tag: "Industrie",
   tagColor: "badge-secondary"
 }, {
@@ -363,7 +364,7 @@ const actualites = [{
   category: "Formation",
   title: "Lancement du programme E-commerce Textile Africain",
   excerpt: "L'Académie SITA ouvre les inscriptions pour sa nouvelle promotion de formation au commerce électronique dédiée aux artisans et stylistes africains.",
-  image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+  image: "https://images.unsplash.com/photo-1604514628550-37a73ea686e2?w=600&q=80",
   tag: "Académie",
   tagColor: "badge-accent"
 }];
@@ -1133,7 +1134,7 @@ const editions = [{
   theme: "Digitalisation & Industrialisation",
   exposants: 500,
   pays_representes: 22,
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80",
+  image: "https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=800&q=80",
   color: "border-primary",
   badge: "badge-primary",
   edition: "4ème"
@@ -1146,7 +1147,7 @@ const editions = [{
   theme: "Tisser l'Afrique de demain",
   exposants: 420,
   pays_representes: 18,
-  image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80",
+  image: "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=800&q=80",
   color: "border-secondary",
   badge: "badge-secondary",
   edition: "3ème"
@@ -1159,7 +1160,7 @@ const editions = [{
   theme: "Coton Bio & Développement Durable",
   exposants: 310,
   pays_representes: 15,
-  image: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=800&q=80",
+  image: "https://images.unsplash.com/photo-1615123820032-f3f7bb34a000?w=800&q=80",
   color: "border-accent",
   badge: "badge-accent",
   edition: "2ème"
@@ -1172,7 +1173,7 @@ const editions = [{
   theme: "Renaissance du Textile Africain",
   exposants: 200,
   pays_representes: 12,
-  image: "https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=800&q=80",
+  image: "https://images.unsplash.com/photo-1590414174649-cad31a917b1d?w=800&q=80",
   color: "border-neutral",
   badge: "badge-neutral",
   edition: "1ère"
@@ -1430,8 +1431,8 @@ const edition$3 = {
   exposants: 200,
   paysRepresentes: 12,
   visiteurs: "4 500",
-  image: "https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=1200&q=80",
-  galerie: ["https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=600&q=80", "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80", "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&q=80", "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80", "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"],
+  image: "https://images.unsplash.com/photo-1590414174649-cad31a917b1d?w=1200&q=80",
+  galerie: ["https://images.unsplash.com/photo-1590414174649-cad31a917b1d?w=600&q=80", "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=600&q=80", "https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=600&q=80", "https://images.unsplash.com/photo-1589156188157-6a8a688e1388?w=600&q=80", "https://images.unsplash.com/photo-1604514628550-37a73ea686e2?w=600&q=80", "https://images.unsplash.com/photo-1566150905458-1bf049841f92?w=600&q=80"],
   prix: [{
     categorie: "Meilleur Styliste",
     laureate: "Dolores Mba Nsue",
@@ -1484,8 +1485,8 @@ const edition$2 = {
   exposants: 310,
   paysRepresentes: 15,
   visiteurs: "7 200",
-  image: "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=1200&q=80",
-  galerie: ["https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&q=80", "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80", "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=600&q=80", "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80", "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"],
+  image: "https://images.unsplash.com/photo-1615123820032-f3f7bb34a000?w=1200&q=80",
+  galerie: ["https://images.unsplash.com/photo-1615123820032-f3f7bb34a000?w=600&q=80", "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=600&q=80", "https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=600&q=80", "https://images.unsplash.com/photo-1589156188157-6a8a688e1388?w=600&q=80", "https://images.unsplash.com/photo-1604514628550-37a73ea686e2?w=600&q=80", "https://images.unsplash.com/photo-1566150905458-1bf049841f92?w=600&q=80"],
   prix: [{
     categorie: "Meilleur Styliste",
     laureate: "Hodan Farah",
@@ -1538,8 +1539,8 @@ const edition$1 = {
   exposants: 420,
   paysRepresentes: 18,
   visiteurs: "9 500",
-  image: "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=1200&q=80",
-  galerie: ["https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80", "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&q=80", "https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=600&q=80", "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80", "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"],
+  image: "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=1200&q=80",
+  galerie: ["https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=600&q=80", "https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=600&q=80", "https://images.unsplash.com/photo-1578821590362-fe5a911cf123?w=600&q=80", "https://images.unsplash.com/photo-1589156188157-6a8a688e1388?w=600&q=80", "https://images.unsplash.com/photo-1604514628550-37a73ea686e2?w=600&q=80", "https://images.unsplash.com/photo-1566150905458-1bf049841f92?w=600&q=80"],
   prix: [{
     categorie: "Meilleur Styliste",
     laureate: "Kodjo Mensah",
@@ -1592,8 +1593,8 @@ const edition = {
   exposants: 500,
   paysRepresentes: 22,
   visiteurs: "12 000",
-  image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80",
-  galerie: ["https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80", "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=600&q=80", "https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=600&q=80", "https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=600&q=80", "https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80", "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80"],
+  image: "https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=1200&q=80",
+  galerie: ["https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=600&q=80", "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=600&q=80", "https://images.unsplash.com/photo-1578821590362-fe5a911cf123?w=600&q=80", "https://images.unsplash.com/photo-1589156188157-6a8a688e1388?w=600&q=80", "https://images.unsplash.com/photo-1604514628550-37a73ea686e2?w=600&q=80", "https://images.unsplash.com/photo-1566150905458-1bf049841f92?w=600&q=80"],
   prix: [{
     categorie: "Meilleur Styliste",
     laureate: "Aminata Kouyaté",
@@ -2025,6 +2026,21 @@ const route9 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.defineProper
   default: exposants,
   meta: meta$3
 }, Symbol.toStringTag, { value: "Module" }));
+const ShoppingCart = ({ className = "w-6 h-6" }) => /* @__PURE__ */ jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" }) });
+const Needle = ({ className = "w-6 h-6" }) => /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: [
+  /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" }),
+  /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12h.01M15 12h.01" })
+] });
+const Leaf = ({ className = "w-6 h-6" }) => /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: [
+  /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" }),
+  /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M13 3v5a2 2 0 002 2h5" })
+] });
+const Scissors = ({ className = "w-6 h-6" }) => /* @__PURE__ */ jsxs("svg", { xmlns: "http://www.w3.org/2000/svg", className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: [
+  /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M14.121 4.379l2.7-2.7a2 2 0 012.828 2.828l-2.7 2.7m0 0l2.122 2.121a2 2 0 11-2.828 2.829L13.293 9.93m0 0L9.707 6.343a2 2 0 10-2.828 2.829l3.585 3.586" }),
+  /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 17H7a2 2 0 01-2-2v-6a2 2 0 012-2h2" })
+] });
+const BarChart = ({ className = "w-6 h-6" }) => /* @__PURE__ */ jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" }) });
+const Smartphone = ({ className = "w-6 h-6" }) => /* @__PURE__ */ jsx("svg", { xmlns: "http://www.w3.org/2000/svg", className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", children: /* @__PURE__ */ jsx("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" }) });
 const meta$2 = () => [{
   title: "Formations & Académie SITA | SITA"
 }, {
@@ -2032,7 +2048,9 @@ const meta$2 = () => [{
   content: "Découvrez les programmes de formation de l'Académie SITA : E-commerce, Tissage, Teinture, Stylisme et bien plus."
 }];
 const modules = [{
-  icon: "🛒",
+  icon: /* @__PURE__ */ jsx(ShoppingCart, {
+    className: "w-8 h-8 text-primary"
+  }),
   titre: "E-commerce & Vente en ligne",
   duree: "6 semaines",
   niveau: "Débutant à Intermédiaire",
@@ -2041,7 +2059,9 @@ const modules = [{
   badge: "badge-primary",
   color: "border-primary"
 }, {
-  icon: "🧵",
+  icon: /* @__PURE__ */ jsx(Needle, {
+    className: "w-8 h-8 text-secondary"
+  }),
   titre: "Techniques de Tissage Traditionnel",
   duree: "8 semaines",
   niveau: "Tous niveaux",
@@ -2050,7 +2070,9 @@ const modules = [{
   badge: "badge-secondary",
   color: "border-secondary"
 }, {
-  icon: "🌿",
+  icon: /* @__PURE__ */ jsx(Leaf, {
+    className: "w-8 h-8 text-accent"
+  }),
   titre: "Teinture Naturelle & Bio",
   duree: "4 semaines",
   niveau: "Intermédiaire",
@@ -2059,7 +2081,9 @@ const modules = [{
   badge: "badge-accent",
   color: "border-accent"
 }, {
-  icon: "✂️",
+  icon: /* @__PURE__ */ jsx(Scissors, {
+    className: "w-8 h-8 text-neutral"
+  }),
   titre: "Stylisme & Création de Mode",
   duree: "12 semaines",
   niveau: "Intermédiaire à Avancé",
@@ -2068,7 +2092,9 @@ const modules = [{
   badge: "badge-neutral",
   color: "border-neutral"
 }, {
-  icon: "📊",
+  icon: /* @__PURE__ */ jsx(BarChart, {
+    className: "w-8 h-8 text-primary"
+  }),
   titre: "Gestion d'Entreprise Textile",
   duree: "5 semaines",
   niveau: "Tous niveaux",
@@ -2077,7 +2103,9 @@ const modules = [{
   badge: "badge-primary",
   color: "border-primary"
 }, {
-  icon: "📱",
+  icon: /* @__PURE__ */ jsx(Smartphone, {
+    className: "w-8 h-8 text-secondary"
+  }),
   titre: "Communication Digitale pour Créateurs",
   duree: "3 semaines",
   niveau: "Débutant",
@@ -2336,7 +2364,7 @@ const articles = [{
   category: "Revue de presse",
   titre: "Revue de Presse — Textile Africain Janvier 2026",
   extrait: "Sélection des meilleurs articles publiés par la presse internationale sur le textile africain, la mode éthique et le développement du secteur en janvier 2026.",
-  image: "https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?w=600&q=80",
+  image: "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=600&q=80",
   badge: "badge-secondary",
   badgeLabel: "Revue de Presse"
 }];
@@ -2851,7 +2879,7 @@ const route12 = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.definePrope
   default: contact,
   meta
 }, Symbol.toStringTag, { value: "Module" }));
-const serverManifest = { "entry": { "module": "/assets/entry.client-BV4wO6U-.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": true, "module": "/assets/root-CQvRXny2.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/_layout": { "id": "routes/_layout", "parentId": "root", "path": void 0, "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/_layout-DI2w-Prw.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "routes/_layout", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/home-DA2d1IUZ.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/le-sita": { "id": "routes/le-sita", "parentId": "routes/_layout", "path": "le-sita", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/le-sita-BWcuQ2ub.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/index": { "id": "routes/editions/index", "parentId": "routes/_layout", "path": "editions", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/index-DfnmnI67.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/malabo-2020": { "id": "routes/editions/malabo-2020", "parentId": "routes/_layout", "path": "editions/malabo-2020", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/malabo-2020-DrjC033U.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/djibouti-2021": { "id": "routes/editions/djibouti-2021", "parentId": "routes/_layout", "path": "editions/djibouti-2021", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/djibouti-2021-D3K1SWw-.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/lome-2022": { "id": "routes/editions/lome-2022", "parentId": "routes/_layout", "path": "editions/lome-2022", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/lome-2022-fcJZS6p4.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/conakry-2023": { "id": "routes/editions/conakry-2023", "parentId": "routes/_layout", "path": "editions/conakry-2023", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/conakry-2023-DcNAZTQE.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/exposants": { "id": "routes/exposants", "parentId": "routes/_layout", "path": "exposants", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/exposants-rL0NUEsv.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/formations": { "id": "routes/formations", "parentId": "routes/_layout", "path": "formations", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/formations-DrsoD-sO.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/presse": { "id": "routes/presse", "parentId": "routes/_layout", "path": "presse", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/presse-DgoAW7nr.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/contact": { "id": "routes/contact", "parentId": "routes/_layout", "path": "contact", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/contact-BR5NluXP.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-a011c911.js", "version": "a011c911", "sri": void 0 };
+const serverManifest = { "entry": { "module": "/assets/entry.client-BV4wO6U-.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": true, "module": "/assets/root-BDu3G0ZR.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/_layout": { "id": "routes/_layout", "parentId": "root", "path": void 0, "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/_layout-DI2w-Prw.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/home": { "id": "routes/home", "parentId": "routes/_layout", "path": void 0, "index": true, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/home-B6gfIGRq.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/le-sita": { "id": "routes/le-sita", "parentId": "routes/_layout", "path": "le-sita", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/le-sita-BWcuQ2ub.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/index": { "id": "routes/editions/index", "parentId": "routes/_layout", "path": "editions", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/index-y6P__kkD.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/malabo-2020": { "id": "routes/editions/malabo-2020", "parentId": "routes/_layout", "path": "editions/malabo-2020", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/malabo-2020-CScIyB-F.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/djibouti-2021": { "id": "routes/editions/djibouti-2021", "parentId": "routes/_layout", "path": "editions/djibouti-2021", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/djibouti-2021-CpPhfQ4D.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/lome-2022": { "id": "routes/editions/lome-2022", "parentId": "routes/_layout", "path": "editions/lome-2022", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/lome-2022-CDfaqUPU.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/editions/conakry-2023": { "id": "routes/editions/conakry-2023", "parentId": "routes/_layout", "path": "editions/conakry-2023", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/conakry-2023-D-l-MUan.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js", "/assets/EditionDetail-BfULo4ao.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/exposants": { "id": "routes/exposants", "parentId": "routes/_layout", "path": "exposants", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/exposants-rL0NUEsv.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/formations": { "id": "routes/formations", "parentId": "routes/_layout", "path": "formations", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/formations-B2AN2hN2.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/presse": { "id": "routes/presse", "parentId": "routes/_layout", "path": "presse", "index": void 0, "caseSensitive": void 0, "hasAction": false, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/presse-BYx6PTEj.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 }, "routes/contact": { "id": "routes/contact", "parentId": "routes/_layout", "path": "contact", "index": void 0, "caseSensitive": void 0, "hasAction": true, "hasLoader": false, "hasClientAction": false, "hasClientLoader": false, "hasClientMiddleware": false, "hasDefaultExport": true, "hasErrorBoundary": false, "module": "/assets/contact-BR5NluXP.js", "imports": ["/assets/chunk-5KNZJZUH-Bf8iUGtw.js"], "css": [], "clientActionModule": void 0, "clientLoaderModule": void 0, "clientMiddlewareModule": void 0, "hydrateFallbackModule": void 0 } }, "url": "/assets/manifest-73c16c37.js", "version": "73c16c37", "sri": void 0 };
 const assetsBuildDirectory = "build/client";
 const basename = "/";
 const future = { "unstable_optimizeDeps": false, "v8_passThroughRequests": false, "unstable_trailingSlashAwareDataRequests": false, "unstable_previewServerPrerendering": false, "v8_middleware": false, "v8_splitRouteModules": false, "v8_viteEnvironmentApi": false };

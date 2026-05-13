@@ -1,5 +1,6 @@
 import type { MetaFunction, ActionFunctionArgs } from "react-router";
 import { Form, useActionData, useNavigation } from "react-router";
+import { MapPin, Phone, Mail } from "~/components/Icons";
 
 export const meta: MetaFunction = () => [
     { title: "Contact & Partenariats | SITA" },
@@ -53,19 +54,19 @@ const sujets = [
 
 const contacts = [
     {
-        icon: "📍",
+        icon: "map-pin",
         titre: "Adresse",
         ligne1: "Secrétariat Général du SITA",
         ligne2: "Conakry, République de Guinée",
     },
     {
-        icon: "📞",
+        icon: "phone",
         titre: "Téléphone",
         ligne1: "+224 620 000 000",
         ligne2: "Lun-Ven, 8h-17h (GMT)",
     },
     {
-        icon: "✉️",
+        icon: "mail",
         titre: "Email",
         ligne1: "contact@sita-afrique.org",
         ligne2: "Réponse sous 48h",
