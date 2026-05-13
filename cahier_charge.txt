@@ -1,0 +1,54 @@
+Ce cahier des charges définit les besoins pour la création d'une plateforme web moderne, dynamique et vitrine pour le **Salon International du Textile Africain (SITA)**.
+
+---
+
+### 1. Présentation du Projet
+
+* **Objectif** : Créer un portail centralisé pour archiver les éditions passées (Djibouti, Lomé, Conakry, etc.), promouvoir l'édition en cours et faciliter les interactions avec les partenaires, exposants et visiteurs.
+* **Cible** : Artisans, stylistes, industriels du textile, institutions gouvernementales, médias et grand public international.
+
+### 2. Arborescence et Contenu
+
+Le site devra être structuré autour des axes suivants :
+
+* **Accueil** : Slider dynamique avec les temps forts des vidéos du SITA, actualités récentes et décompte avant la prochaine édition.
+* **Le SITA** : Vision, mission (industrialisation, digitalisations), mot du Commissaire Général et historique.
+* **Éditions (Archives)** : Une section dédiée pour chaque ville hôte (Malabo 2020, Djibouti 2021, Lomé 2022, Conakry 2023) incluant :
+* Galeries photos et vidéos des parades et défilés.
+* Thématiques abordées et résolutions des conférences.
+* Palmarès des prix (Meilleur Styliste, Meilleur Mannequin, Meilleur Stand).
+
+
+* **Espace Exposants/Participants** :
+* Formulaire d'inscription en ligne pour les stands.
+* Critères de participation pour les stylistes et mannequins.
+
+
+* **Formations & Académie** : Présentation des modules (E-commerce, Tissage, Teinture).
+* **Presse & Blog** : Communiqués de presse, revue de presse et articles sur l'industrie du textile en Afrique.
+* **Contact & Partenariat** : Coordonnées, formulaires de contact et logos des partenaires (EBOMAF, institutions, etc.).
+
+### 3. Fonctionnalités Techniques
+
+* **Multilingue** : Français, Anglais, et potentiellement Portugais/Espagnol (pour couvrir les zones comme la Guinée Équatoriale).
+* **Responsive Design** : Optimisation totale pour smartphones et tablettes.
+* **Interactivité Vidéo** : Intégration fluide de la chaîne SITA TV pour visionner les reportages et défilés en direct ou en replay.
+* **Système de Billetterie/Accréditation** : Génération de badges QR Code pour les visiteurs et la presse.
+* **Référencement (SEO)** : Optimisation sur les mots-clés liés au textile africain, mode éthique et coton bio.
+
+### 4. Design et Identité Visuelle
+
+* **Charte graphique** : Utiliser les couleurs panafricaines (vert, jaune, rouge) en harmonie avec le logo du SITA.
+* **Esthétique** : Design épuré mettant en avant la richesse visuelle des tissus (pagne, Faso Dan Fani, tissus traditionnels).
+* [Image d'une interface web moderne avec des motifs de textile africain en arrière-plan]
+
+
+
+### 5. Maintenance et Évolutions
+
+* **Back-office (CMS)** : Interface simple pour permettre à l'équipe du SITA de mettre à jour les photos et les textes après chaque événement.
+* **Évolutivité** : Possibilité d'ajouter une boutique e-commerce pour la vente des produits labellisés SITA dans le futur.
+
+---
+
+Ce document servira de base technique pour les développeurs afin de garantir que l'essence culturelle et industrielle du SITA soit fidèlement représentée en ligne.

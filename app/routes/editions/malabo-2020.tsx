@@ -1,0 +1,57 @@
+import type { MetaFunction } from "react-router";
+import EditionDetail from "~/components/EditionDetail";
+
+export const meta: MetaFunction = () => [
+    { title: "SITA Malabo 2020 — 1ère Édition | SITA" },
+    { name: "description", content: "Revivez la 1ère édition fondatrice du SITA à Malabo, Guinée Équatoriale — 2020." },
+];
+
+const edition = {
+    numero: "1ère",
+    annee: "2020",
+    ville: "Malabo",
+    pays: "Guinée Équatoriale",
+    flag: "🇬🇶",
+    dates: "5 – 10 Novembre 2020",
+    theme: "Renaissance du Textile Africain",
+    description:
+        "La première édition du SITA a été organisée à Malabo, capitale de la Guinée Équatoriale, dans un contexte mondial difficile marqué par la pandémie de COVID-19. Malgré les contraintes sanitaires, 200 exposants de 12 pays africains ont répondu présent pour cette édition fondatrice. L'événement a posé les bases du mouvement SITA : valoriser le patrimoine textile africain, créer des liens entre artisans et industriels, et porter la voix de la mode africaine sur la scène internationale. Ce premier rendez-vous a établi les prix SITA devenus depuis une référence continentale.",
+    exposants: 200,
+    paysRepresentes: 12,
+    visiteurs: "4 500",
+    image: "https://images.unsplash.com/photo-1590414174649-cad31a917b1d?w=1200&q=80",
+    galerie: [
+        "https://images.unsplash.com/photo-1590414174649-cad31a917b1d?w=600&q=80",
+        "https://images.unsplash.com/photo-1617638924567-92f374d4c81f?w=600&q=80",
+        "https://images.unsplash.com/photo-1549887534-f3a748b0cd5c?w=600&q=80",
+        "https://images.unsplash.com/photo-1589156188157-6a8a688e1388?w=600&q=80",
+        "https://images.unsplash.com/photo-1604514628550-37a73ea686e2?w=600&q=80",
+        "https://images.unsplash.com/photo-1566150905458-1bf049841f92?w=600&q=80",
+    ],
+    prix: [
+        { categorie: "Meilleur Styliste", laureate: "Dolores Mba Nsue", pays: "Guinée Équatoriale" },
+        { categorie: "Meilleur Mannequin", laureate: "Grâce Eyenga", pays: "Cameroun" },
+        { categorie: "Meilleur Stand", laureate: "Faso Dan Fani Premium", pays: "Burkina Faso" },
+    ],
+    conferences: [
+        {
+            titre: "Acte Fondateur : Charte du SITA",
+            resolution:
+                "Adoption de la Charte fondatrice du SITA et création du Comité Panafricain du Textile, organe de gouvernance chargé d'assurer la pérennité et le développement du salon.",
+        },
+        {
+            titre: "Textile Africain sur la scène mondiale",
+            resolution:
+                "Engagement des participants à promouvoir le textile africain dans les grandes foires internationales (Paris, Milan, New York) et à créer une délégation commune.",
+        },
+        {
+            titre: "Financement de l'Artisanat Textile",
+            resolution:
+                "Plaidoyer auprès des institutions financières africaines (BAD, Afreximbank) pour la création de lignes de crédit spécifiques aux PME textiles africaines.",
+        },
+    ],
+};
+
+export default function MalaboPage() {
+    return <EditionDetail edition={edition} />;
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Fond blanc -->
+  <rect width="192" height="192" fill="#FAFAF8"/>
+  
+  <!-- Barre panafricaine -->
+  <rect width="192" height="64" fill="#C8102E"/>
+  <rect y="64" width="192" height="64" fill="#FFD100"/>
+  <rect y="128" width="192" height="64" fill="#009A44"/>
+  
+  <!-- Cercle SITA au centre -->
+  <circle cx="96" cy="96" r="45" fill="white" opacity="0.95"/>
+  
+  <!-- Lettres SITA -->
+  <text x="96" y="106" font-family="Georgia, serif" font-size="48" font-weight="bold" text-anchor="middle" fill="#009A44" letter-spacing="-2">SITA</text>
+</svg>
