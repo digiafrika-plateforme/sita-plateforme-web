@@ -37,9 +37,12 @@ export default function Footer() {
                     {/* Branding */}
                     <div className="lg:col-span-1">
                         <div className="flex items-center gap-3 mb-4">
-                            <div className="w-14 h-14 rounded-full bg-primary flex items-center justify-center text-primary-content font-bold text-xl border-2 border-secondary">
-                                SITA
-                            </div>
+                            <img
+                                src="/logo-sita.JPG"
+                                alt="Logo officiel SITA"
+                                className="w-14 h-14 rounded-full border-2 border-secondary bg-white object-contain shadow"
+                                style={{ padding: "3px" }}
+                            />
                         </div>
                         <p className="text-sm text-neutral-content/70 leading-relaxed mb-4">
                             Le Salon International du Textile Africain — vitrine de la créativité,

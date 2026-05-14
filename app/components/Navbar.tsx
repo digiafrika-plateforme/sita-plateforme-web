@@ -37,9 +37,12 @@ export default function Navbar() {
                 {/* Logo */}
                 <div className="navbar-start">
                     <NavLink to="/" className="flex items-center gap-3 group" aria-label="SITA - Accueil">
-                        <div className="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-primary-content font-bold text-lg border-2 border-secondary group-hover:scale-105 transition-transform">
-                            SITA
-                        </div>
+                        <img
+                            src="/logo-sita.JPG"
+                            alt="Logo officiel SITA"
+                            className="w-12 h-12 rounded-full border-2 border-secondary bg-white object-contain group-hover:scale-105 transition-transform shadow"
+                            style={{ padding: "2px" }}
+                        />
                         <div className="hidden sm:block">
                             <div className="font-bold text-sm leading-tight" style={{ fontFamily: "var(--font-heading)" }}>
                                 Salon International

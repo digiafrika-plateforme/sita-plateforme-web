@@ -52,6 +52,15 @@ export default function EditionDetail({ edition }: EditionDetailProps) {
                     </Link>
                     <div className="flex items-start gap-4">
                         <span className="text-5xl">{edition.flag}</span>
+                        {/* Logo spécial pour Lomé */}
+                        {edition.ville === "Lomé" && (
+                            <img
+                                src="/logo-edition-lome.PNG"
+                                alt="Logo SITA Lomé 2022"
+                                className="h-16 w-auto rounded-lg shadow border border-secondary bg-white p-1 ml-2"
+                                style={{ maxWidth: "70px" }}
+                            />
+                        )}
                         <div>
                             <span className="text-secondary font-semibold uppercase tracking-widest text-sm">
                                 {edition.numero} édition du SITA

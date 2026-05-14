@@ -10,7 +10,7 @@ import type { LinksFunction } from "react-router";
 import stylesheet from "./app.css?url";
 
 export const links: LinksFunction = () => [
-    { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+    { rel: "icon", href: "/logo-sita.JPG", type: "image/jpeg" },
     {
         rel: "preconnect",
         href: "https://fonts.gstatic.com",

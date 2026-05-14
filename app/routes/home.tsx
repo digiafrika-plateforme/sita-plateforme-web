@@ -107,10 +107,19 @@ export default function HomePage() {
                 <div className="absolute bottom-20 left-10 w-96 h-96 rounded-full bg-primary/10 blur-3xl" />
 
                 <div className="relative z-10 container mx-auto px-4 text-center text-white">
-                    {/* Badge édition */}
+                    {/* Badge édition à venir */}
                     <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-2 mb-8">
                         <span className="w-2 h-2 rounded-full bg-secondary animate-pulse" />
-                        <span className="text-sm font-medium tracking-wide">5ème Édition — Bientôt</span>
+                        <span className="text-sm font-medium tracking-wide">
+                            <span className="font-bold text-secondary">5ème Édition à venir&nbsp;:</span>
+                            <span className="ml-2">Canada 2027</span>
+                        </span>
+                        <img
+                            src="/logo-sita-edition-2027-canada.jpg"
+                            alt="Logo SITA Canada 2027"
+                            className="h-8 w-auto ml-3 rounded-lg shadow-sm border border-secondary bg-white p-1"
+                            style={{ maxWidth: "60px" }}
+                        />
                     </div>
 
                     <h1
@@ -203,6 +212,35 @@ export default function HomePage() {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {/* Mise en avant spéciale pour l'édition Canada */}
+                        <article className="card bg-base-100 shadow-md card-cultural border border-primary/40 overflow-hidden md:col-span-1 flex flex-col items-center justify-center">
+                            <div className="flex flex-col items-center justify-center p-6">
+                                <img
+                                    src="/logo-sita-edition-2027-canada.jpg"
+                                    alt="Logo SITA Canada 2027"
+                                    className="h-16 w-auto mb-3 rounded-lg shadow border border-secondary bg-white p-1"
+                                    style={{ maxWidth: "80px" }}
+                                />
+                                <div className="badge badge-primary font-medium mb-2">Prochaine édition</div>
+                                <h3
+                                    className="card-title text-lg leading-tight mb-2 text-center"
+                                    style={{ fontFamily: "var(--font-heading)" }}
+                                >
+                                    5ème édition du SITA — <span className="text-secondary">Canada 2027</span>
+                                </h3>
+                                <p className="text-xs text-base-content/50 uppercase tracking-wider mb-1">
+                                    Novembre 2027 · Canada
+                                </p>
+                                <p className="text-sm text-base-content/70 leading-relaxed text-center">
+                                    Le SITA s'exporte en Amérique du Nord ! Rendez-vous au Canada pour une édition exceptionnelle dédiée à l'innovation, la diversité et la valorisation du textile africain à l'international.
+                                </p>
+                                <div className="card-actions mt-4">
+                                    <Link to="/editions" className="btn btn-primary btn-sm">
+                                        Découvrir le programme 2027
+                                    </Link>
+                                </div>
+                            </div>
+                        </article>
                         {actualites.map((actu) => (
                             <article key={actu.id} className="card bg-base-100 shadow-md card-cultural border border-base-200 overflow-hidden">
                                 <figure className="relative h-48 overflow-hidden">

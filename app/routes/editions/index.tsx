@@ -10,6 +10,22 @@ export const meta: MetaFunction = () => [
 ];
 
 const editions = [
+    // Ajout de l'édition à venir Canada 2027
+    {
+        annee: "2027",
+        ville: "Canada",
+        pays: "Canada",
+        flag: "🇨🇦",
+        to: "/editions/canada-2027",
+        theme: "Innovation, Diversité et Rayonnement international",
+        exposants: 0,
+        pays_representes: 0,
+        image: "/logo-sita-edition-2027-canada.jpg",
+        color: "border-primary",
+        badge: "badge-primary",
+        edition: "5ème (à venir)",
+        isUpcoming: true,
+    },
     {
         annee: "2023",
         ville: "Conakry",
@@ -97,16 +113,37 @@ export default function EditionsPage() {
                             <Link
                                 key={ed.to}
                                 to={ed.to}
-                                className={`group card bg-base-100 shadow-md border-l-4 ${ed.color} card-cultural overflow-hidden`}
+                                className={`group card bg-base-100 shadow-md border-l-4 ${ed.color} card-cultural overflow-hidden ${ed.isUpcoming ? 'ring-2 ring-primary/60 scale-105' : ''}`}
                             >
-                                <figure className="relative h-56 overflow-hidden">
-                                    <img
-                                        src={ed.image}
-                                        alt={`Édition ${ed.ville} ${ed.annee}`}
-                                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                                        loading="lazy"
-                                    />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                <figure className="relative h-56 overflow-hidden flex items-center justify-center bg-white">
+                                    {/* Logo spécial pour Lomé */}
+                                    {ed.ville === "Lomé" && (
+                                        <img
+                                            src="/logo-edition-lome.PNG"
+                                            alt="Logo SITA Lomé 2022"
+                                            className="absolute top-3 left-3 h-12 w-auto rounded-lg shadow border border-secondary bg-white p-1 z-10"
+                                            style={{ maxWidth: "60px" }}
+                                        />
+                                    )}
+                                    {/* Logo spécial pour Canada 2027 */}
+                                    {ed.isUpcoming ? (
+                                        <div className="flex flex-col items-center justify-center w-full h-full">
+                                            <img
+                                                src="/logo-sita-edition-2027-canada.jpg"
+                                                alt="Logo SITA Canada 2027"
+                                                className="h-24 w-auto rounded-lg shadow border border-primary bg-white p-2 object-contain"
+                                                style={{ maxWidth: "120px" }}
+                                            />
+                                        </div>
+                                    ) : (
+                                        <img
+                                            src={ed.image}
+                                            alt={`Édition ${ed.ville} ${ed.annee}`}
+                                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 rounded-xl"
+                                            loading="lazy"
+                                        />
+                                    )}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none" />
                                     <div className="absolute bottom-4 left-4 flex items-center gap-2">
                                         <span className="text-3xl">{ed.flag}</span>
                                         <div>
@@ -123,22 +160,26 @@ export default function EditionsPage() {
                                     <div className="flex gap-6">
                                         <div className="text-center">
                                             <div className="text-2xl font-bold text-base-content" style={{ fontFamily: "var(--font-heading)" }}>
-                                                {ed.exposants}+
+                                                {ed.exposants > 0 ? `${ed.exposants}+` : '--'}
                                             </div>
                                             <div className="text-xs text-base-content/60">Exposants</div>
                                         </div>
                                         <div className="divider divider-horizontal" />
                                         <div className="text-center">
                                             <div className="text-2xl font-bold text-base-content" style={{ fontFamily: "var(--font-heading)" }}>
-                                                {ed.pays_representes}
+                                                {ed.pays_representes > 0 ? ed.pays_representes : '--'}
                                             </div>
                                             <div className="text-xs text-base-content/60">Pays représentés</div>
                                         </div>
                                     </div>
                                     <div className="card-actions mt-4">
-                                        <span className="btn btn-ghost btn-sm text-primary p-0 group-hover:underline">
-                                            Voir la galerie & les résolutions →
-                                        </span>
+                                        {ed.isUpcoming ? (
+                                            <span className="btn btn-primary btn-sm">À venir en 2027</span>
+                                        ) : (
+                                            <span className="btn btn-ghost btn-sm text-primary p-0 group-hover:underline">
+                                                Voir la galerie & les résolutions →
+                                            </span>
+                                        )}
                                     </div>
                                 </div>
                             </Link>
